@@ -10,7 +10,6 @@
 }
 class line {
      int point1;
-     int ;
      public line(int x,int y){
 
      }

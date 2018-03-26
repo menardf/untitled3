@@ -18,4 +18,10 @@ public class manipulation {
 
 
     }
+    public static void main(String[] args){
+        manipulation ts= new manipulation();
+        String weak="t";
+        ts.Stringmanipulation(weak);
+
+    }
 }

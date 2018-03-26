@@ -8,17 +8,19 @@
  */
 public class triangle {
     public String drawtriangle(int size){
-        String result;
-        if( size==0)return null;
-        else {
 
-            result="*";
-            return drawtriangle(2-size*2);
+        if( size==0)return "";
+        else {
+            String res= drawtriangle(size-1);
+            res = "*";
+            System.out.println(res);
+            return res;
             }
         }
 
-    public static void Main(System [] args){
+    public static void main (String [] args){
         triangle tr= new triangle();
+        tr.drawtriangle(3);
 
     }
 }
