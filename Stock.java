@@ -7,9 +7,10 @@
  * .java was created for...
  */
 public class Stock {
+    Stock T;
     String stockname;
 
-    String abbreviation[];
+    String[] abbreviation=new String[4];
 
 
     String pricepershare;
@@ -55,10 +56,31 @@ public class Stock {
     public void setStockname(String stockname) {
         this.stockname = stockname;
     }
+    public int totaldivident(Stock T){
+        int totaldivident;
+        totaldivident= T.getNumshares()*T.getDividend();
+        return totaldivident;
 
-    public int totaldiv(int numshares, int dividend ){
-
-        int total = numshares*dividend;
-        return total;
     }
+
+    public static void main(String[] args){
+        Stock A= new Stock();
+        A.setNumshares(10);
+        A.setDividend(20);
+
+        System.out.println(A.totaldivident(A) );
+
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
